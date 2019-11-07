@@ -1,4 +1,4 @@
-using MacroTools: textmap, textwalk, @capture, isexpr
+using SourceWalk: textmap, textwalk, @capture, isexpr
 using Test
 
 testrep(ex, text) = textmap(_ -> Expr(:file, ex), text)

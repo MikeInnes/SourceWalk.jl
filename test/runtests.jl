@@ -1,11 +1,7 @@
-using MacroTools
-using Compat, Compat.Test
+using SourceWalk, Test
 
-@testset "MacroTools" begin
+@testset "SourceWalk" begin
 
-include("match.jl")
-include("split.jl")
-include("destruct.jl")
 include("patch.jl")
 
 end

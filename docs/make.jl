@@ -1,13 +1,16 @@
-using Documenter, MacroTools
+using Pkg
+Pkg.activate(joinpath(@__DIR__, "..")); Pkg.instantiate()
+Pkg.activate(); Pkg.instantiate()
+
+pushfirst!(LOAD_PATH, joinpath(@__DIR__, ".."))
+
+using Documenter, SourceWalk
 
 makedocs(
-    sitename = "MacroTools",
+    sitename = "SourceWalk",
     pages = [
-        "Home" => "index.md",
-        "Pattern Matching" => "pattern-matching.md",
-        "SourceWalk" => "sourcewalk.md",
-        "Utilities" => "utilities.md"],
+        "Home" => "index.md"],
     format = Documenter.HTML(prettyurls = haskey(ENV, "CI")))
 
 deploydocs(
-  repo = "github.com/MikeInnes/MacroTools.jl.git",)
+  repo = "github.com/MikeInnes/SourceWalk.jl.git",)

@@ -1,13 +1,18 @@
-name = "MacroTools"
-uuid = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
-version = "0.5.1"
+name = "SourceWalk"
+uuid = "2987fe4f-acca-4bd1-87ee-98b3d562f1a1"
+version = "0.1.0"
 
 [deps]
 CSTParser = "00ebfdb7-1f24-5e51-bd34-a7502290713f"
-Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
 DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 Tokenize = "0796e94c-ce3b-5d07-9a54-7f471281c624"
 
 [compat]
-julia = "≥ 1.0"
+CSTParser = "1"
+DataStructures = "0"
+MacroTools = "0"
+Tokenize = "0"
+julia = "1"
