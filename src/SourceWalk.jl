@@ -3,7 +3,7 @@ module SourceWalk
 using Reexport
 
 @reexport using MacroTools
-using MacroTools: @forward, striplines
+using MacroTools: @forward, striplines, postwalk
 using DataStructures
 
 export sourcewalk
